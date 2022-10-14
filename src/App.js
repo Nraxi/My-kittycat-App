@@ -1,4 +1,3 @@
-
 import './CSS/App.css';
 import {
   BrowserRouter as Router,
@@ -7,14 +6,14 @@ import {
 } from "react-router-dom"
 import Kittys from './Components/Kittys';
 import Home from './Components/Home';
-import Nav from './Navbar/Nav'
+import Navbaren from './Navbar/Nav'
 
 
 
 function App() {
   return (
     <Router>
-      <Nav />
+      <Navbaren />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Kittys" element={<Kittys />} />

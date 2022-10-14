@@ -1,16 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Container, Navbar, Nav } from "react-bootstrap"
 
 
-function Nav() {
+
+function Navbaren() {
   return (
-    <header>
-      <nav className='navbar'>
-        <Link className="nav-item" to="/">Home</Link>
-        <Link className="nav-item" to="/Kittys">Kittys</Link>
-      </nav>
-    </header>
+    <Navbar bg="dark" expand="lg" variant="dark" className="meny1">
+      <Container>
+        <Navbar.Brand href="/">Kittys</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Startpage</Nav.Link>
+            <Nav.Link href="/Kittys">Kitty</Nav.Link>
+            <br />
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
   )
 }
 
-export default Nav
+export default Navbaren
