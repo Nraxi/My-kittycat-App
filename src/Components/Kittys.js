@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { getApi } from '../FetchApi'
 
 function Kittys() {
-  return (
 
+  const [fetchedData, setFetchedData] = useState([])
+
+  useEffect(() => {
+    getApi().then(({ cats }) => setFetchedData(cats));
+
+  }, [])
+
+
+  return (
     <div>
-      <p>
-        Kittys
-      </p>
+      <pre>{JSON.stringify(fetchedData, null, 2)}</pre>
     </div>
+
   )
 }
 
