@@ -13,6 +13,7 @@ function Navbaren() {
           <Nav className="me-auto">
             <Nav.Link href="/">Startpage</Nav.Link>
             <Nav.Link href="/Kittys">Kitty</Nav.Link>
+            <Nav.Link href="/user">User</Nav.Link>
             <br />
           </Nav>
         </Navbar.Collapse>

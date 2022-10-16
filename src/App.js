@@ -4,10 +4,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom"
-import Kittys from './Components/Kittys';
+import KittyList from './Components/KittyList';
 import Home from './Components/Home';
 import Navbaren from './Navbar/Nav'
-
+import UserDetails from './Components/UserDetails'
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
       <Navbaren />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Kittys" element={<Kittys />} />
+        <Route path="/Kittys" element={<KittyList />} />
+        <Route path="/user" element={<UserDetails />} />
       </Routes>
     </Router>
   );
