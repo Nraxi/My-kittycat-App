@@ -15,3 +15,21 @@
   background-color: rgb(129, 130, 130);
   color: rgb(255, 255, 255);
 }
+
+
+.allakatter {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+
+}
+
+.listofcats {
+  flex: 40%;
+  padding: 20px;
+
+  margin-right: 10px;
+  list-style: none;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import '../CSS/Kittys.css'
 
 function KittyLista() {
 
@@ -27,7 +27,7 @@ function KittyLista() {
       .then(data => setKittysListSort(data.cats))
       .catch(err => console.error(err));
     const sorted = kittysList.sort((a, b) => {
-      return a.cutenessLevel - b.cutenessLevel;
+      return b.cutenessLevel - a.cutenessLevel;
     })
     setKittysListSort(sorted)
 
@@ -36,34 +36,39 @@ function KittyLista() {
   //Sort all bad kittys 
   function sortBadKittys() {
     const sorted = kittysList.sort((a, b) => {
-      return b.cutenessLevel - a.cutenessLevel;
+      return a.cutenessLevel - b.cutenessLevel;
     })
     setKittysListSort(sorted)
 
   };
 
   return (
-    <div className='allakatter'>
+    <div className='Listig'>
+
+      <div className='SortMenu'>
+        <h4>Sorting:</h4>
+        <button className='ButtonsKitty-b1' onClick={Kittys}>None</button>
+        <button className='ButtonsKitty-b2' onClick={sortCuteKittys}>Much cute</button>
+        <button className='ButtonsKitty-b3' onClick={sortBadKittys}>Not cute</button>
+      </div>
+      <div className='grid'>
+        {/* Get all Kittys */}
+        <ul className='allakatter' >
+          {kittysList.map(u => (
+            <li className='listofcats' key={u.name}>
+              <img src={`images/${u.image}`} alt="blank" className='bild' />
+              <p>{u.name}</p>
+            </li>
+
+          ))}
+        </ul>
+
+      </div>
 
 
-      <button onClick={Kittys}>Get all Kittys</button>
-      <button onClick={sortCuteKittys}>Get cute Kittys</button>
-      <button onClick={sortBadKittys}>Get Bad Kittys</button>
 
 
-      {/* Get all Kittys */}
-      <ul className='listofcats'>
-        {kittysList.map(u => (
-          <li key={u.name}>
-            <img src={`images/${u.image}`} alt="blank" />
-            {u.name}
-          </li>
-        ))}
-      </ul>
-
-
-
-    </div>
+    </div >
   )
 }
 
