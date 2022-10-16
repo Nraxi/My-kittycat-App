@@ -7,7 +7,6 @@ import {
 import KittyList from './Components/KittyList';
 import Home from './Components/Home';
 import Navbaren from './Navbar/Nav'
-import UserDetails from './Components/UserDetails'
 
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Kittys" element={<KittyList />} />
-        <Route path="/user" element={<UserDetails />} />
       </Routes>
     </Router>
   );
