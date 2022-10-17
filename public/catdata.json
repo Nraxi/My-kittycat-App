@@ -16,7 +16,7 @@
     },
     {
       "name": "Ginger",
-      "image": "3.jpg",
+      "image": "3.png",
       "cutenessLevel": 20,
       "allergyInducingFur": false,
       "livesLeft": 9
@@ -51,14 +51,14 @@
     },
     {
       "name": "Malinda",
-      "image": "8.jpg",
+      "image": "8.png",
       "cutenessLevel": 93,
       "allergyInducingFur": true,
       "livesLeft": 8
     },
     {
       "name": "Mercer",
-      "image": "9.jpg",
+      "image": "9.png",
       "cutenessLevel": 28,
       "allergyInducingFur": false,
       "livesLeft": 1
@@ -93,7 +93,7 @@
     },
     {
       "name": "Walsh",
-      "image": "14.jpg",
+      "image": "14.png",
       "cutenessLevel": 81,
       "allergyInducingFur": false,
       "livesLeft": 7
@@ -149,7 +149,7 @@
     },
     {
       "name": "Alejandra",
-      "image": "22.jpg",
+      "image": "22.png",
       "cutenessLevel": 91,
       "allergyInducingFur": true,
       "livesLeft": 1
