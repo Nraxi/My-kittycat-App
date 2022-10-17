@@ -1,7 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 .navbar {
-  padding: -10px;
+  background-color: rgb(74, 61, 61);
+  padding: 20px;
+  margin-top: -5px;
+}
+
+.navbar :hover {
+  color: red;
 }
 
 .underscore {}
