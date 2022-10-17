@@ -4,6 +4,7 @@
   background-color: rgb(74, 61, 61);
   padding: 20px;
   margin-top: -5px;
+  width: auto;
 }
 
 .navbar :hover {
