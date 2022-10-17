@@ -9,7 +9,7 @@ function KittyLista() {
   const [kittysList, setKittysList] = useState([])
 
   //Sort cute kittys
-  const [kittysListSort, setKittysListSort] = useState([])
+  const [, setKittysListSort] = useState([])
 
 
   //Gets all kittys
