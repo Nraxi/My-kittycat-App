@@ -45,7 +45,7 @@ function KittyLista() {
   return (
     <div className='Listig'>
       <div className='firstMenu'>
-
+        <p>Press none to get started</p>
         <div className='SortMenu'>
           <h4>Sorting:</h4>
           <button className='ButtonsKitty-b1' onClick={Kittys}>None</button>
@@ -61,9 +61,8 @@ function KittyLista() {
           {kittysList.map(u => (
             <li className='listofcats' key={u.name}>
               <img src={`images/${u.image}`} alt="blank" className='bild' />
-              <p>{u.name}</p>
+              <p className='catstext'>{u.name}</p>
             </li>
-
           ))}
         </ul>
 
