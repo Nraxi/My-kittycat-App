@@ -1,12 +1,16 @@
 .SortMenu {
   display: flex;
-  margin: 10px;
+  margin-top: 20px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .SortMenu h4 {
   margin-right: 5px;
-}
 
+
+}
 
 .ButtonsKitty-b1,
 .ButtonsKitty-b2,
@@ -16,6 +20,9 @@
   color: rgb(255, 255, 255);
 }
 
+.grid {
+  margin-top: 10px;
+}
 
 .allakatter {
   display: flex;

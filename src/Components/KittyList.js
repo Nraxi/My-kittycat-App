@@ -44,13 +44,17 @@ function KittyLista() {
 
   return (
     <div className='Listig'>
+      <div className='firstMenu'>
 
-      <div className='SortMenu'>
-        <h4>Sorting:</h4>
-        <button className='ButtonsKitty-b1' onClick={Kittys}>None</button>
-        <button className='ButtonsKitty-b2' onClick={sortCuteKittys}>Much cute</button>
-        <button className='ButtonsKitty-b3' onClick={sortBadKittys}>Not cute</button>
+        <div className='SortMenu'>
+          <h4>Sorting:</h4>
+          <button className='ButtonsKitty-b1' onClick={Kittys}>None</button>
+          <button className='ButtonsKitty-b2' onClick={sortCuteKittys}>Much cute</button>
+          <button className='ButtonsKitty-b3' onClick={sortBadKittys}>Not cute</button>
+        </div>
       </div>
+
+      <br />
       <div className='grid'>
         {/* Get all Kittys */}
         <ul className='allakatter' >
