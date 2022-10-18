@@ -3,7 +3,7 @@ import '../CSS/Kittys.css'
 
 function KittyLista() {
 
-  const api = './catdata.json'
+  const api = 'http://localhost:8080/api/kittys'
 
   //Gets all kittys
   const [kittysList, setKittysList] = useState([])
@@ -16,7 +16,7 @@ function KittyLista() {
   function Kittys() {
     fetch(api)
       .then(response => response.json())
-      .then(data => setKittysList(data.cats))
+      .then(data => setKittysList(data))
       .catch(err => console.error(err));
   }
 
@@ -24,7 +24,7 @@ function KittyLista() {
   function sortCuteKittys() {
     fetch(api)
       .then(response => response.json())
-      .then(data => setKittysListSort(data.cats))
+      .then(data => setKittysListSort(data))
       .catch(err => console.error(err));
     const sorted = kittysList.sort((a, b) => {
       return b.cutenessLevel - a.cutenessLevel;
