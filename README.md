@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# My Kitty Cat APP
+
+## Before u start the app go to cd into Kittycat
+
+### Run " npm I " in terminal to install all the node modules.
+### After u have installed the node modules for the app. 
+### Just run the command " Npm Start "
+
+### There are a simple json file in the files that u can access if u dont wants to use the backend. 
+
+### just add the following code 
+```
+'./catdata.json' in the API in FILE = " KittyList.js "
+
+ .then(data => setKittysList(data.cats)) "LINE 19 in FILE = " KittyList.js "
+
+ .then(data => setKittysListSort(data.cats)) "LINE 27 in FILE = " KittyList.js "
+
+```
+
+## Author: Olle (Nraxi) 18.10.2022
+
+
+## Ordinary that comes with REACT for extra docs: 
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
