@@ -6,7 +6,7 @@
 ### After u have installed the node modules for the app. 
 ### Just run the command " Npm Start "
 
-### There are a simple json file in the files that u can access if u dont wants to use the backend. 
+### There is a simple json file in the files that u can access if u dont wants to use the backend. 
 
 ### just add the following code 
 ```
